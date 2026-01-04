@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exam Copy Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <center>
+        <div>
+            <h1><a href="./Final Rk PRacticals.docx"> Final Rk PRacticals </a></h1>
+        </div>
+    </center>
+
+  <div class="app">
+    <!-- Left: Practical list -->
+    <aside class="sidebar" aria-label="Practical list">
+      <div class="header">Practicals</div>
+      <div id="list" class="list"></div>
+    </aside>
+    <!-- Right: Code preview and copy -->
+    <main class="content">
+      <div class="preview-header">
+        <div id="currentTitle" class="title">Select a practical</div>
+        <button id="copyBtn" class="copy-btn" type="button">Copy Code</button>
+      </div>
+      <!-- Read-only preview area; selectable text -->
+      <pre id="codeBox" class="codebox" aria-label="Code preview" tabindex="0" readonly></pre>
+    </main>
+  </div>
+  <!-- Copy toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite">Code Copied ✅</div>
+
+  <script src="generated_practicals.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
